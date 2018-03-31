@@ -17,17 +17,18 @@ public class MainActivity extends AppCompatActivity{
         findViewById(R.id.btn_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                foo1();
+                try {
+                    foo1();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
 
 
     @TimePayment
-    public void foo1() {
-        int i = 0;
-        while (i < 1000) {
-            i++;
-        }
+    public void foo1() throws InterruptedException {
+        Thread.sleep(1000);
     }
 }

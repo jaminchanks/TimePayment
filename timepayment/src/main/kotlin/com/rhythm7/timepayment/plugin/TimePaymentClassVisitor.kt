@@ -43,7 +43,7 @@ class TimePaymentClassVisitor(classVisitor: ClassVisitor) : ClassVisitor(Opcodes
                     methodVisitor.visitLdcInsn(name)
                     methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "nanoTime",
                             "()J", false)
-                    methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/rhythm7/timepayment/core/TimePaymentHelper", "setEndTime",
+                    methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/rhythm7/timepayment/core/TimePaymentHelper", "setStartTime",
                             "(Ljava/lang/String;J)V", false)
                 }
             }
@@ -58,7 +58,7 @@ class TimePaymentClassVisitor(classVisitor: ClassVisitor) : ClassVisitor(Opcodes
 
                     methodVisitor.visitFieldInsn(GETSTATIC, "com/rhythm7/timepayment/core/TimePaymentHelper", "INSTANCE", "Lcom/rhythm7/timepayment/core/TimePaymentHelper;")
                     methodVisitor.visitLdcInsn(name)
-                    methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/rhythm7/timepayment/core/TimePaymentHelper", "getCostTime", "(Ljava/lang/String;)V", false)
+                    methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/rhythm7/timepayment/core/TimePaymentHelper", "getPayTime", "(Ljava/lang/String;)V", false)
                 }
             }
         }

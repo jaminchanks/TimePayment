@@ -48,4 +48,13 @@ class ExampleUnitTest {
             throw IllegalArgumentException("The provided File object is not a directory: " + dir.absolutePath)
         }
     }
+
+
+    @Test
+    fun test2() {
+        val time1 = System.nanoTime()
+        Thread.sleep(1000)
+        val time2 = System.nanoTime()
+        println(time2 - time1)
+    }
 }
