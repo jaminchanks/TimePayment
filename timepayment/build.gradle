@@ -1,0 +1,28 @@
+apply plugin: 'maven'
+apply plugin: 'kotlin'
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+
+    implementation "com.android.tools.build:gradle:$buildtool_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+repositories {
+    jcenter()
+    google()
+
+}
+
+group="com.rhythm7"
+version="beta-0.1.6"
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('repo'))
+        }
+    }
+}
