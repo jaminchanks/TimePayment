@@ -4,7 +4,7 @@
 rootProject下：
 ```groovy
 buildscript {
-...
+
 repositories {
         google()
         jcenter()
@@ -13,7 +13,6 @@ repositories {
         }
     }
     dependencies {
-        ...
         classpath "com.rhythm7:timepayment:beta-0.1.5"
     }
 }
