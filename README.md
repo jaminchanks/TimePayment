@@ -20,9 +20,13 @@ repositories {
 
 ```
 
-app module 下：
+app module 下(目前插件的使用位置被限定在了app module中)：
 ```groovy
 apply plugin: 'timepayment'
+
+dependencies {
+    implementation project(':timepayment_core')
+}
 ```
 
 示例代码：
