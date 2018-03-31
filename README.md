@@ -2,15 +2,15 @@
 自定义gradle插件，实现编译时在被注解的方法内部注入代码，实现计算方法耗时时间。
 
 rootProject下：
-```
+```java
 buildscript {
 ...
 repositories {
         google()
         jcenter()
         maven {
-            url uri("\\timepayment\\repo")
-        }
+            url uri("\\timepayment\\repo") //mven指定本地路径，因为我没有上传到远程库中
+        }
     }
     dependencies {
         ...
@@ -19,12 +19,14 @@ repositories {
 }
 
 ```
+
 app module 下：
-```
+```java
 apply plugin: 'timepayment'
 ```
+
 示例代码：
-```
+```java
 public class MainActivity extends AppCompatActivity{
 
     @Override
@@ -57,5 +59,4 @@ I/System.out:             >>>===================================================
                           >>>========================================================>>>
 
 ```
-
 
