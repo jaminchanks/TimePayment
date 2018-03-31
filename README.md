@@ -2,7 +2,7 @@
 自定义gradle插件，实现编译时在被注解的方法内部注入代码，实现计算方法耗时时间。
 
 rootProject下：
-```java
+```groovy
 buildscript {
 ...
 repositories {
@@ -21,7 +21,7 @@ repositories {
 ```
 
 app module 下：
-```java
+```groovy
 apply plugin: 'timepayment'
 ```
 
