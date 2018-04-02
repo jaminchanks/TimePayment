@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TimePayment.iml" filepath="$PROJECT_DIR$/TimePayment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TimePayment.iml" filepath="$PROJECT_DIR$/.idea/TimePayment.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/timepayment/timepayment.iml" filepath="$PROJECT_DIR$/timepayment/timepayment.iml" />
       <module fileurl="file://$PROJECT_DIR$/timepayment_core/timepayment_core.iml" filepath="$PROJECT_DIR$/timepayment_core/timepayment_core.iml" />
