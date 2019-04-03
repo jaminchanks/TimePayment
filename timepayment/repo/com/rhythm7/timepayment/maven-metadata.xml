@@ -3,7 +3,7 @@
   <groupId>com.rhythm7</groupId>
   <artifactId>timepayment</artifactId>
   <versioning>
-    <release>beta-0.1.8</release>
+    <release>beta-0.2.0</release>
     <versions>
       <version>beta-0.1.0</version>
       <version>beta-0.1.1</version>
@@ -12,7 +12,10 @@
       <version>beta-0.1.5</version>
       <version>beta-0.1.6</version>
       <version>beta-0.1.8</version>
+      <version>beta-0.1.9</version>
+      <version>beta-0.2.0</version>
+      <version>beta-0.2.1</version>
     </versions>
-    <lastUpdated>20180402023103</lastUpdated>
+    <lastUpdated>20190403152637</lastUpdated>
   </versioning>
 </metadata>

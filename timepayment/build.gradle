@@ -17,7 +17,7 @@ repositories {
 }
 
 group="com.rhythm7"
-version="beta-0.1.8"
+version="beta-0.2.0"
 
 uploadArchives {
     repositories {

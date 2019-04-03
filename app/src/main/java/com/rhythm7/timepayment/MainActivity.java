@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.com.rhythm7.com.rhythm.timepayment.R;
 import com.rhythm7.timepayment.core.annotations.TimePayment;
 
 public class MainActivity extends AppCompatActivity{

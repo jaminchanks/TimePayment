@@ -1,6 +1,6 @@
 package com.rhythm7.timepayment.plugin
 
-import com.rhythm7.timepayment.core.annotations.TimePayment
+import com.rhythm7.timepayment.constant.Constants
 import org.objectweb.asm.*
 import org.objectweb.asm.commons.AdviceAdapter
 
@@ -21,7 +21,7 @@ class TimePaymentClassVisitor(classVisitor: ClassVisitor) : ClassVisitor(Opcodes
 
             override fun visitAnnotation(desc: String?, visible: Boolean): AnnotationVisitor {
                 println(">>>>>>>>>>>$desc")
-                if (Type.getDescriptor(TimePayment::class.java) == desc) {
+                if (Constants.ANNOTATION_TIMEPAYMENT == desc) {
                     isInject = true
                 }
                 return super.visitAnnotation(desc, visible)
